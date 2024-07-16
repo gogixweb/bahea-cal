@@ -11,10 +11,10 @@ export default function Login() {
   const navigate = useNavigate();
 
   const scope = [
-    "https://www.googleapis.com/auth/calendar",
     "https://www.googleapis.com/auth/calendar.app.created",
     "https://www.googleapis.com/auth/userinfo.email",
     "https://www.googleapis.com/auth/userinfo.profile",
+    "https://www.googleapis.com/auth/calendar",
     "openid"
   ];
 
@@ -31,15 +31,16 @@ export default function Login() {
         }
       });
 
-      console.log('response-data: ', response.data);
-      localStorage.setItem('loginData', JSON.stringify(response.data));
+      console.log('token-data: ', response.data.token);
+      localStorage.setItem('accessToken', response.data.token);
+     
     } catch (error) {
       console.error('error: ', error);
     }
   }
 
   const login = useGoogleLogin({
-    scope: "https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/calendar.app.created https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+    scope: "https://www.googleapis.com/auth/calendar.app.created https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar openid",
     flow: 'auth-code',
     access_type: 'offline',
     prompt: 'consent',
@@ -48,7 +49,7 @@ export default function Login() {
 
 
   useEffect(() => {
-    const loginData = localStorage.getItem('loginData');
+    const loginData = localStorage.getItem('accessToken');
     if (loginData) {
       navigate('../settings');
     }
