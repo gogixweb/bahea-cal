@@ -15,8 +15,6 @@ const UserSettings = () => {
       try {
 
         const loginData = localStorage.getItem('loginData');
-        
-
         const response = await axios.get(
           MOCKBIN,
           {

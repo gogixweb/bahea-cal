@@ -33,7 +33,6 @@ export default function Login() {
 
       console.log('response-data: ', response.data);
       localStorage.setItem('loginData', JSON.stringify(response.data));
-     
     } catch (error) {
       console.error('error: ', error);
     }
@@ -52,7 +51,6 @@ export default function Login() {
     const loginData = localStorage.getItem('loginData');
     if (loginData) {
       navigate('../settings');
-     
     }
   }, [navigate]);
 
