@@ -91,11 +91,12 @@ dev = [
     "ipdb>=0.13.13",
     "pytest-django>=4.8.0",
     "black>=24.4.2",
+    "django-configurations>=2.5.1",
 ]
 
 [tool.pytest.ini_options]
-DJANGO_CONFIGURATION = "webapp.settings"
-python_files = ["tests.py", "test_.py", "_test.py", "testing/python/*.py"]
+DJANGO_SETTINGS_MODULE = "webapp.settings"
+python_files = ["tests.py", "test_.py", "_test.py", "testing/python/*.py", "tests/**/*.py"]
 
 [tool.black]
 line-length = 120
