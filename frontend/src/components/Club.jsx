@@ -68,7 +68,7 @@ export default function Club(){
 
         <div className="horizontal-buttons">
         <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={flamengologo} alt="Flamengo" style={{ width: '50px', height: '50px' }} /> 
+          <img src={flamengologo} alt="Flamengo" style={{ width: '50px', height: '50px' }} />
         </button>
         <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
           <img src={palmeiraslogo} alt="Palmeiras" style={{ width: '50px', height: '50px' }} />
