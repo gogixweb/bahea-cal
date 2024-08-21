@@ -61,15 +61,15 @@ export default function Club(){
     <div className="container text-center mt-5">
     <h1>Adicione Jogos do Seu Time</h1>
     <h3>no calendário do seu celular</h3>
-    
+
     <div className="my-4">
       <button onClick={login} className="btn btn-primary">
         <img src={BahiaLogo} alt="Bahia" className="img-fluid" style={{ width: '50px', height: '50px' }} /> Bahia
       </button>
     </div>
-    
+
     <h5>Em breve...</h5>
-    
+
     <div className="d-flex justify-content-center flex-wrap mt-3">
       <button className="btn btn-outline-secondary m-2">
         <img src={flamengologo} alt="Flamengo" className="img-fluid" style={{ width: '50px', height: '50px' }} /> Flamengo
@@ -88,6 +88,6 @@ export default function Club(){
       </button>
     </div>
   </div>
-  
+
     );
 }
