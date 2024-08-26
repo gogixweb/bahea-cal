@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 console.log(React)
 
-const USER_INFO = "http://localhost:8000/api/v1/user/info/";
+const USER_INFO = `${process.env.REACT_APP_API_URL}/api/v1/user/info/`;
 
 
 const UserSettings = () => {
