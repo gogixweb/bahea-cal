@@ -66,26 +66,26 @@ export default function Club(){
         <div className='button-container'>
 
         <button onClick={login}  className="bahia-button" >
-          <img src={BahiaLogo} alt="Bahia" style={{ width: '50px', height: '50px' }} /> Bahia
+          <img src={BahiaLogo} alt="Bahia" style={{ width: '50px', height: '50px' }} />
         </button>
 
           <h5>Em breve...</h5>
 
         <div className="horizontal-buttons">
         <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={flamengologo} alt="Flamengo" style={{ width: '50px', height: '50px' }} /> Flamengo
+          <img src={flamengologo} alt="Flamengo" style={{ width: '50px', height: '50px' }} />
         </button>
         <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={palmeiraslogo} alt="Palmeiras" style={{ width: '50px', height: '50px' }} /> Palmeiras
+          <img src={palmeiraslogo} alt="Palmeiras" style={{ width: '50px', height: '50px' }} />
         </button>
         <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={corinthiaslogo} alt="corinthinas" style={{ width: '50px', height: '50px' }} /> Corinthians
+          <img src={corinthiaslogo} alt="corinthinas" style={{ width: '50px', height: '50px' }} />
         </button>
         <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={fluminenselogo} alt="fluminense" style={{ width: '50px', height: '50px' }} /> Fluminense
+          <img src={fluminenselogo} alt="fluminense" style={{ width: '50px', height: '50px' }} />
         </button>
         <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={atleticologo} alt="atletico" style={{ width: '50px', height: '50px' }} /> Atlético
+          <img src={atleticologo} alt="atletico" style={{ width: '50px', height: '50px' }} />
         </button>
         </div>
       </div>
