@@ -58,37 +58,36 @@ export default function Club(){
 
 
   return (
-      <div className='container'>
+    <div className="container text-center mt-5">
+    <h1>Adicione Jogos do Seu Time</h1>
+    <h3>no calendário do seu celular</h3>
 
-        <h1>Adicione Jogos do Seu Time</h1>
-
-        <h3>no calendário do seu celular</h3>
-        <div className='button-container'>
-
-        <button onClick={login}  className="bahia-button" >
-          <img src={BahiaLogo} alt="Bahia" style={{ width: '50px', height: '50px' }} /> Bahia
-        </button>
-
-          <h5>Em breve...</h5>
-
-        <div className="horizontal-buttons">
-        <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={flamengologo} alt="Flamengo" style={{ width: '50px', height: '50px' }} /> Flamengo
-        </button>
-        <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={palmeiraslogo} alt="Palmeiras" style={{ width: '50px', height: '50px' }} /> Palmeiras
-        </button>
-        <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={corinthiaslogo} alt="corinthinas" style={{ width: '50px', height: '50px' }} /> Corinthians
-        </button>
-        <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={fluminenselogo} alt="fluminense" style={{ width: '50px', height: '50px' }} /> Fluminense
-        </button>
-        <button> {/* Alterando para this.showLogo e corrigindo o nome do time */}
-          <img src={atleticologo} alt="atletico" style={{ width: '50px', height: '50px' }} /> Atlético
-        </button>
-        </div>
-      </div>
+    <div className="my-4">
+      <button onClick={login} className="btn btn-primary">
+        <img src={BahiaLogo} alt="Bahia" className="img-fluid" style={{ width: '50px', height: '50px' }} /> Bahia
+      </button>
     </div>
+
+    <h5>Em breve...</h5>
+
+    <div className="d-flex justify-content-center flex-wrap mt-3">
+      <button className="btn btn-outline-secondary m-2">
+        <img src={flamengologo} alt="Flamengo" className="img-fluid" style={{ width: '50px', height: '50px' }} /> Flamengo
+      </button>
+      <button className="btn btn-outline-secondary m-2">
+        <img src={palmeiraslogo} alt="Palmeiras" className="img-fluid" style={{ width: '50px', height: '50px' }} /> Palmeiras
+      </button>
+      <button className="btn btn-outline-secondary m-2">
+        <img src={corinthiaslogo} alt="Corinthians" className="img-fluid" style={{ width: '50px', height: '50px' }} /> Corinthians
+      </button>
+      <button className="btn btn-outline-secondary m-2">
+        <img src={fluminenselogo} alt="Fluminense" className="img-fluid" style={{ width: '50px', height: '50px' }} /> Fluminense
+      </button>
+      <button className="btn btn-outline-secondary m-2">
+        <img src={atleticologo} alt="Atlético" className="img-fluid" style={{ width: '50px', height: '50px' }} /> Atlético
+      </button>
+    </div>
+  </div>
+
     );
 }
