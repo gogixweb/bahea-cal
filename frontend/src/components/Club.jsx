@@ -1,10 +1,10 @@
 // import React from 'react';
 import BahiaLogo from '../assets/bahia.png'; // Corrigindo o caminho para os arquivos de imagem
-import flamengologo from '../assets/flamengo1.png';
+import flamengologo from '../assets/flamengo.png';
 import palmeiraslogo from '../assets/palmeiras.png';
-import atleticologo from   '../assets/atletico.png';
+import atleticologo from   '../assets/atl_mineiro.png';
 import fluminenselogo from '../assets/fluminense.png';
-import corinthiaslogo from '../assets/corinthias.png';
+import corinthiaslogo from '../assets/corinthians.png';
 import { useGoogleLogin } from '@react-oauth/google';
 import {} from 'react-router-dom';
 import axios from 'axios';
